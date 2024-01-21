@@ -1,6 +1,6 @@
 let btn = document.querySelector('.rdog')
 let img = document.querySelector('img')
-// tar en random hund bild från dog api
+// Takes random dog image
 
 btn.addEventListener('click', ()=>{
   fetch('https://dog.ceo/api/breeds/image/random').then((response)=>{
@@ -12,6 +12,7 @@ btn.addEventListener('click', ()=>{
   })
 })
 
+//checks if a breed exists
 let btn2 = document.querySelector('.checka')
 let field = document.querySelector('.dogBreed')
 let answer = document.querySelector('.breed')
